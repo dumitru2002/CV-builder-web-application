@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dumit\\source\\repos\\CVBuilderAuth\\CVBuilderAuth\\CVBuilderAuth.csproj": {}
+    "C:\\Users\\dumit\\Source\\Repos\\dumitru2002\\CV-builder-web-application\\CVBuilderAuth\\CVBuilderAuth.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dumit\\source\\repos\\CVBuilderAuth\\CVBuilderAuth\\CVBuilderAuth.csproj": {
+    "C:\\Users\\dumit\\Source\\Repos\\dumitru2002\\CV-builder-web-application\\CVBuilderAuth\\CVBuilderAuth.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dumit\\source\\repos\\CVBuilderAuth\\CVBuilderAuth\\CVBuilderAuth.csproj",
+        "projectUniqueName": "C:\\Users\\dumit\\Source\\Repos\\dumitru2002\\CV-builder-web-application\\CVBuilderAuth\\CVBuilderAuth.csproj",
         "projectName": "CVBuilderAuth",
-        "projectPath": "C:\\Users\\dumit\\source\\repos\\CVBuilderAuth\\CVBuilderAuth\\CVBuilderAuth.csproj",
+        "projectPath": "C:\\Users\\dumit\\Source\\Repos\\dumitru2002\\CV-builder-web-application\\CVBuilderAuth\\CVBuilderAuth.csproj",
         "packagesPath": "C:\\Users\\dumit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dumit\\source\\repos\\CVBuilderAuth\\CVBuilderAuth\\obj\\",
+        "outputPath": "C:\\Users\\dumit\\Source\\Repos\\dumitru2002\\CV-builder-web-application\\CVBuilderAuth\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dumit\\AppData\\Roaming\\NuGet\\NuGet.Config",
