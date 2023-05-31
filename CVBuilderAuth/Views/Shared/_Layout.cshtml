@@ -10,10 +10,16 @@
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Web Name</a>
+                <a class="navbar-brand" href="Home/Privacy">CV Builder Project</a>
             </div>
             <ul class="nav navbar-nav">
+
+
+                @if (User.Identity.IsAuthenticated)
+                {
                     <li><a href="/Dashboard/Display">Dashboard</a></li>
+                }
+                
                 @if (User.IsInRole("admin"))
                 {
                     <li><a href="/Admin/Display">Admin Page</a></li>
