@@ -10,7 +10,7 @@
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="Home/Privacy">CV Builder Project</a>
+                <a class="navbar-brand" href="~/Home/Index">CV Builder Project</a>
             </div>
             <ul class="nav navbar-nav">
 
@@ -24,6 +24,8 @@
                 {
                     <li><a href="/Admin/Display">Admin Page</a></li>
                 }
+
+                <li><a href="~/Home/About">About</a></li>
 
                 @if (User.Identity.IsAuthenticated)
                 {
