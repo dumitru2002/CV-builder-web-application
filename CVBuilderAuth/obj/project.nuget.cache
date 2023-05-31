@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aV4ENAegPI6brlg4SDpULOPDf0Rl1Kt6ekUU61okWDVeEy83aXXQzlDhfu0t9JPe0KlzJ127FOU2KPPGvJUUwg==",
+  "dgSpecHash": "JfVNhy7HB/Hkl+wlycv+vmUVcExtL9rfdV+b5pZZ6OkX8PoXhna7vWOyBIX0bp61qj5J8lqflM5kqxcIXXPaXA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dumit\\source\\repos\\dumitru2002\\CV-builder-web-application\\CVBuilderAuth\\CVBuilderAuth.csproj",
+  "projectFilePath": "C:\\Users\\dumit\\Source\\Repos\\dumitru2002\\CV-builder-web-application\\CVBuilderAuth\\CVBuilderAuth.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dumit\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\dumit\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
