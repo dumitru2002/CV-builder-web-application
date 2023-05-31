@@ -61,7 +61,7 @@ namespace CVBuilderAuth.Controllers
         public async Task<IActionResult> Logout()
         {
             await _service.LogoutAsync();
-            return RedirectToAction(nameof(Login));
+            return RedirectToAction(nameof(Index), "Home");
         }
 
       /*  public async Task<IActionResult> Reg()

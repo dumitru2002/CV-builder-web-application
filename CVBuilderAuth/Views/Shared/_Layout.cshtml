@@ -18,8 +18,16 @@
                 {
                     <li><a href="/Admin/Display">Admin Page</a></li>
                 }
-                
+
+                @if (User.Identity.IsAuthenticated)
+                {
                     <li><a href="/UserAuthentication/Logout">Logout</a></li>
+                }
+                else
+                {
+                    <li><a href="/UserAuthentication/Login">Login</a></li>
+                }
+
                 
             </ul>
         </div>
