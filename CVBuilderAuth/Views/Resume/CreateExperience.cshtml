@@ -1,0 +1,41 @@
+﻿@model CVBuilderAuth.Models.CvExperience
+
+@{
+    ViewBag.Title = "Create Experience";
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Optional: Set the layout for the view
+}
+
+<h2>Create Experience</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Position)
+        @Html.TextBoxFor(model => model.Position, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.Position)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Description)
+        @Html.TextAreaFor(model => model.Description, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.Description)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.StartDate)
+        @Html.TextBoxFor(model => model.StartDate, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.StartDate)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.EndDate)
+        @Html.TextBoxFor(model => model.EndDate, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.EndDate)
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
+}

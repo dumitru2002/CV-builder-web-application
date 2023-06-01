@@ -17,16 +17,31 @@ namespace CVBuilderAuth.Controllers
 			return View();
 		}
 
+		
+
 		[HttpPost]
 		public async Task<IActionResult> Create(UserCvInfo userCvInfo)
 		{
 			db.UserCvInfos.Add(userCvInfo);
 			await db.SaveChangesAsync();
-			return RedirectToAction("Index", "Home");
+			return RedirectToAction("CreateExperience");
+
 		}
+		public IActionResult CreateExperience() 
+				{
+					return View();
+				}
+        [HttpPost]
+        public async Task<IActionResult> CreateExperience(CvExperience cvExperience)
+        {
+            db.CvExperiences.Add(cvExperience);
+            await db.SaveChangesAsync();
+            return RedirectToAction("Index", "Home");
+
+        }
 
 
-		public IActionResult CV()
+        public IActionResult CV()
 		{
 			return View();
 		}
