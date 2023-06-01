@@ -26,6 +26,12 @@ namespace CVBuilderAuth.Controllers
 		}
 
 
+		public IActionResult CV()
+		{
+			return View();
+		}
+
+
 
 
 	}
