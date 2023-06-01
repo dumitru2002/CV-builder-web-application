@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\CVBuilderAuth",
+    "\\CVBuilderAuth\\Controllers"
   ],
-  "SelectedNode": "\\CVBuilderAuth.sln",
+  "SelectedNode": "\\CVBuilderAuth\\Controllers\\UserAuthenticationController.cs",
   "PreviewInSolutionExplorer": false
 }
