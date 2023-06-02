@@ -77,16 +77,30 @@ namespace CVBuilderAuth.Controllers
 
             db.CvSkills.Add(cvSkill);
             await db.SaveChangesAsync();
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Show");
+        }
+
+        public IActionResult Show()
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            var viewModel = new CombinedViewModel();
+            viewModel.UserCvInfoData = db.UserCvInfos.Where(u => u.UserId == userId).ToList();
+            viewModel.CvExperienceData = db.CvExperiences.Where(c => c.UserId == userId).ToList();
+            viewModel.CvLanguageSkillData = db.CvLanguageSkills.Where(l => l.UserId == userId).ToList();
+            viewModel.CvSkillsData = db.CvSkills.Where(s => s.UserId == userId).ToList();
+
+            return View(viewModel);
         }
 
         public IActionResult CV()
-		{
-			return View();
-		}
+        {
+            return View();
+        }
 
 
 
 
-	}
+
+    }
 }
