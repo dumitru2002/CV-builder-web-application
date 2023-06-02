@@ -6,9 +6,18 @@ namespace CVBuilderAuth.Models
     {
         public DbSet<UserCvInfo> UserCvInfos { get; set; } = null!;
         public DbSet<CvExperience> CvExperiences { get; set; }
+        public DbSet<CvLanguageSkill> CvLanguageSkills { get; set; }
+        public DbSet<CvSkill> CvSkills { get; set; }
+
         public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options)
         {
         }
+
+
+
+
+
+
 
         /* protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
