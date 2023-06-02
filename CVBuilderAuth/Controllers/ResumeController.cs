@@ -1,28 +1,35 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CVBuilderAuth.Models;
+using Microsoft.AspNetCore.Identity;
+using CVBuilderAuth.Models.Domain;
+using System.Security.Claims;
 
 namespace CVBuilderAuth.Controllers
 {
 	public class ResumeController : Controller
 	{
 		ApplicationContext db;
-		public ResumeController(ApplicationContext context)
+        private readonly UserManager<ApplicationUser> _userManager;
+        public ResumeController(ApplicationContext context, UserManager<ApplicationUser> userManager)
 		{
 			db = context;
-		}
+            _userManager = userManager;
+        }
 
 		public IActionResult Create() 
 		{
 			return View();
 		}
 
-		
-
-		[HttpPost]
+        [HttpPost]
 		public async Task<IActionResult> Create(UserCvInfo userCvInfo)
 		{
-			db.UserCvInfos.Add(userCvInfo);
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            userCvInfo.UserId = userId;
+
+
+            db.UserCvInfos.Add(userCvInfo);
 			await db.SaveChangesAsync();
 			return RedirectToAction("CreateExperience");
 
@@ -34,6 +41,9 @@ namespace CVBuilderAuth.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateExperience(CvExperience cvExperience)
         {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            cvExperience.UserId = userId;
+
             db.CvExperiences.Add(cvExperience);
             await db.SaveChangesAsync();
             return RedirectToAction("CreateLanguage");
@@ -47,7 +57,10 @@ namespace CVBuilderAuth.Controllers
 		[HttpPost]
 		public async Task<IActionResult> CreateLanguage(CvLanguageSkill cvLanguageSkill)
 		{
-			db.CvLanguageSkills.Add(cvLanguageSkill);
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            cvLanguageSkill.UserId = userId;
+
+            db.CvLanguageSkills.Add(cvLanguageSkill);
 			await db.SaveChangesAsync();
 			return RedirectToAction("CreateSkill");
 		}
@@ -59,6 +72,9 @@ namespace CVBuilderAuth.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateSkill(CvSkill cvSkill)
         {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            cvSkill.UserId = userId;
+
             db.CvSkills.Add(cvSkill);
             await db.SaveChangesAsync();
             return RedirectToAction("Index", "Home");
