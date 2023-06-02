@@ -36,10 +36,33 @@ namespace CVBuilderAuth.Controllers
         {
             db.CvExperiences.Add(cvExperience);
             await db.SaveChangesAsync();
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("CreateLanguage");
 
         }
 
+        public IActionResult CreateLanguage()
+        {
+            return View();
+        }
+		[HttpPost]
+		public async Task<IActionResult> CreateLanguage(CvLanguageSkill cvLanguageSkill)
+		{
+			db.CvLanguageSkills.Add(cvLanguageSkill);
+			await db.SaveChangesAsync();
+			return RedirectToAction("CreateSkill");
+		}
+
+        public IActionResult CreateSkill()
+        {
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> CreateSkill(CvSkill cvSkill)
+        {
+            db.CvSkills.Add(cvSkill);
+            await db.SaveChangesAsync();
+            return RedirectToAction("Index", "Home");
+        }
 
         public IActionResult CV()
 		{

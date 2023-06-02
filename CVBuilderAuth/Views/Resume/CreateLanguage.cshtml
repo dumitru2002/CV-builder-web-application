@@ -1,0 +1,29 @@
+﻿@model CVBuilderAuth.Models.CvLanguageSkill
+
+@{
+    ViewBag.Title = "Create Experience";
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Optional: Set the layout for the view
+}
+
+<h2>Language Skills</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Language)
+        @Html.TextBoxFor(model => model.Language, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.Language)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Proficiency)
+        @Html.TextBoxFor(model => model.Proficiency, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.Proficiency)
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Next" class="btn btn-primary" />
+    </div>
+}
