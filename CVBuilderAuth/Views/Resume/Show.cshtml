@@ -12,6 +12,7 @@
             <td>@Model.UserCvInfoData.FirstOrDefault()?.BirthDate</td>
             <td>@Model.UserCvInfoData.FirstOrDefault()?.Email</td>
             <td>@Model.UserCvInfoData.FirstOrDefault()?.Phone</td>
+            <td>@Model.UserCvInfoData.FirstOrDefault()?.About</td>
         </tr>
            <a href="/Resume/Edit"><button type="button" >Change User Info</button> </a>
     </table>
@@ -47,6 +48,17 @@
         <tr>
             <td>@Model.CvSkillsData.FirstOrDefault()?.Name</td>
             <td>@Model.CvSkillsData.FirstOrDefault()?.Level</td>
+
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>CV Education</th>
+        </tr>
+        <tr>
+            <td>@Model.CvEducationData.FirstOrDefault()?.Name</td>
+            <td>@Model.CvEducationData.FirstOrDefault()?.Type</td>
 
         </tr>
     </table>

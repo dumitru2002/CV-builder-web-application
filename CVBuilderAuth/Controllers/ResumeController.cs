@@ -32,9 +32,26 @@ namespace CVBuilderAuth.Controllers
 
             db.UserCvInfos.Add(userCvInfo);
             await db.SaveChangesAsync();
+            return RedirectToAction("CreateEducation");
+
+        }
+
+        public IActionResult CreateEducation()
+        {
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> CreateEducation(CvEducation cvEducation)
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            cvEducation.UserId = userId;
+
+            db.CvEducations.Add(cvEducation);
+            await db.SaveChangesAsync();
             return RedirectToAction("CreateExperience");
 
         }
+
         public IActionResult CreateExperience()
         {
             return View();
@@ -90,8 +107,9 @@ namespace CVBuilderAuth.Controllers
             viewModel.CvExperienceData = db.CvExperiences.Where(c => c.UserId == userId).ToList();
             viewModel.CvLanguageSkillData = db.CvLanguageSkills.Where(l => l.UserId == userId).ToList();
             viewModel.CvSkillsData = db.CvSkills.Where(s => s.UserId == userId).ToList();
+            viewModel.CvEducationData = db.CvEducations.Where(s => s.UserId == userId).ToList();
 
-            return View(viewModel);
+            return View(viewModel );
         }
 
         public IActionResult CV()

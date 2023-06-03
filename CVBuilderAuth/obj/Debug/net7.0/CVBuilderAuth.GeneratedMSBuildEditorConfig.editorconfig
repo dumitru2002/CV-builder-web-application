@@ -40,6 +40,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdW1lXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/dumit/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Resume/CreateEducation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdW1lXENyZWF0ZUVkdWNhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/dumit/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Resume/CreateExperience.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdW1lXENyZWF0ZUV4cGVyaWVuY2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -54,6 +58,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/dumit/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Resume/CV.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdW1lXENWLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dumit/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Resume/CvTemplate/1/1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdW1lXEN2VGVtcGxhdGVcMVwxLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/dumit/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Resume/Edit.cshtml]

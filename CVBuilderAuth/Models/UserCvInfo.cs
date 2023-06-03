@@ -11,5 +11,6 @@ namespace CVBuilderAuth.Models
         public string BirthDate { get; set; }
         public string Email { get; set; }
         public string Phone { get; set; }
+        public string About { get; set; }
     }
 }
