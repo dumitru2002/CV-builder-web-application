@@ -4,40 +4,41 @@ using CVBuilderAuth.Models;
 using Microsoft.AspNetCore.Identity;
 using CVBuilderAuth.Models.Domain;
 using System.Security.Claims;
+using CVBuilderAuth.Migrations.Application;
 
 namespace CVBuilderAuth.Controllers
 {
-	public class ResumeController : Controller
-	{
-		ApplicationContext db;
+    public class ResumeController : Controller
+    {
+        ApplicationContext db;
         private readonly UserManager<ApplicationUser> _userManager;
         public ResumeController(ApplicationContext context, UserManager<ApplicationUser> userManager)
-		{
-			db = context;
+        {
+            db = context;
             _userManager = userManager;
         }
 
-		public IActionResult Create() 
-		{
-			return View();
-		}
+        public IActionResult Create()
+        {
+            return View();
+        }
 
         [HttpPost]
-		public async Task<IActionResult> Create(UserCvInfo userCvInfo)
-		{
+        public async Task<IActionResult> Create(UserCvInfo userCvInfo)
+        {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             userCvInfo.UserId = userId;
 
 
             db.UserCvInfos.Add(userCvInfo);
-			await db.SaveChangesAsync();
-			return RedirectToAction("CreateExperience");
+            await db.SaveChangesAsync();
+            return RedirectToAction("CreateExperience");
 
-		}
-		public IActionResult CreateExperience() 
-				{
-					return View();
-				}
+        }
+        public IActionResult CreateExperience()
+        {
+            return View();
+        }
         [HttpPost]
         public async Task<IActionResult> CreateExperience(CvExperience cvExperience)
         {
@@ -54,16 +55,16 @@ namespace CVBuilderAuth.Controllers
         {
             return View();
         }
-		[HttpPost]
-		public async Task<IActionResult> CreateLanguage(CvLanguageSkill cvLanguageSkill)
-		{
+        [HttpPost]
+        public async Task<IActionResult> CreateLanguage(CvLanguageSkill cvLanguageSkill)
+        {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             cvLanguageSkill.UserId = userId;
 
             db.CvLanguageSkills.Add(cvLanguageSkill);
-			await db.SaveChangesAsync();
-			return RedirectToAction("CreateSkill");
-		}
+            await db.SaveChangesAsync();
+            return RedirectToAction("CreateSkill");
+        }
 
         public IActionResult CreateSkill()
         {
@@ -96,6 +97,26 @@ namespace CVBuilderAuth.Controllers
         public IActionResult CV()
         {
             return View();
+        }
+
+
+
+        [HttpGet]
+        public ActionResult Edit()
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            UserCvInfo userCvInfo = db.UserCvInfos.FirstOrDefault(u => u.UserId == userId);
+            return View(userCvInfo);
+        }
+
+        [HttpPost]
+        public ActionResult Edit(UserCvInfo userCvInfo)
+        {
+            db.Entry(userCvInfo).State = EntityState.Modified;
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            userCvInfo.UserId = userId;
+            db.SaveChanges();
+            return RedirectToAction("Show");
         }
 
 

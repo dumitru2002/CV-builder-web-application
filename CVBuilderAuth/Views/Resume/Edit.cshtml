@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Edit User Info";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model CVBuilderAuth.Models.UserCvInfo
+<h2>Edit User Info  </h2>
+@using (Html.BeginForm("Edit", "Resume", FormMethod.Post))
+{
+    <fieldset>
+        @Html.HiddenFor(m => m.Id)
+        <p>
+            @Html.LabelFor(m => m.FirstName, "First Name")
+            <br />
+            @Html.EditorFor(m => m.FirstName)
+        </p>
+        <p>
+            @Html.LabelFor(m => m.LastName, "Last Name")
+            <br />
+            @Html.EditorFor(m => m.LastName)
+
+        </p>
+        <p>
+            @Html.LabelFor(m => m.BirthDate, "Birth Date")
+            <br />
+            @Html.EditorFor(m => m.BirthDate)
+        </p>
+        <p>
+            @Html.LabelFor(m => m.Email, "Email")
+            <br />
+            @Html.EditorFor(m => m.Email)
+
+        </p>
+        <p>
+            @Html.LabelFor(m => m.Phone, "Phone Number")
+            <br />
+            @Html.EditorFor(m => m.Phone)
+        </p>
+        <p><input type="submit" value="Save" /></p>
+    </fieldset>
+}
