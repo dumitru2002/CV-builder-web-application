@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "CVBuilderAuth/1.0.0": {
         "dependencies": {
+          "IronPdf": "2023.6.10",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.5",
           "Microsoft.EntityFrameworkCore": "7.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
@@ -52,11 +53,925 @@
           }
         }
       },
+      "BitMiracle.LibTiff.NET/2.4.649": {
+        "runtime": {
+          "lib/netstandard2.0/BitMiracle.LibTiff.NET.dll": {
+            "assemblyVersion": "2.4.649.0",
+            "fileVersion": "2.4.649.0"
+          }
+        }
+      },
+      "Google.Protobuf/3.22.3": {
+        "runtime": {
+          "lib/net5.0/Google.Protobuf.dll": {
+            "assemblyVersion": "3.22.3.0",
+            "fileVersion": "3.22.3.0"
+          }
+        }
+      },
+      "Grpc/2.46.6": {
+        "dependencies": {
+          "Grpc.Core": "2.46.6"
+        }
+      },
+      "Grpc.Core/2.46.6": {
+        "dependencies": {
+          "Grpc.Core.Api": "2.46.6",
+          "System.Memory": "4.5.5"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Grpc.Core.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.46.6.0"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/linux-arm64/native/libgrpc_csharp_ext.arm64.so": {
+            "rid": "linux-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/libgrpc_csharp_ext.x64.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/libgrpc_csharp_ext.x64.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/grpc_csharp_ext.x64.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/grpc_csharp_ext.x86.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Grpc.Core.Api/2.46.6": {
+        "dependencies": {
+          "System.Memory": "4.5.5"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Grpc.Core.Api.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.46.6.0"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "runtime": {
           "lib/net6.0/Humanizer.dll": {
             "assemblyVersion": "2.14.0.0",
             "fileVersion": "2.14.1.48190"
+          }
+        }
+      },
+      "IronPdf/2023.6.10": {
+        "dependencies": {
+          "IronPdf.Native.Chrome.Windows": "2023.6.14948",
+          "IronPdf.Slim": "2023.6.10"
+        }
+      },
+      "IronPdf.Native.Chrome.Windows/2023.6.14948": {
+        "runtimeTargets": {
+          "runtimes/win-x64/native/IronCefSubprocess.exe": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/IronInterop.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "2023.6.0.14948"
+          },
+          "runtimes/win-x64/native/IronPdf.Native.Chrome.deployment.json": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/chrome_100_percent.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/chrome_200_percent.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/chrome_elf.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "110.0.5481.179"
+          },
+          "runtimes/win-x64/native/concrt140.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "14.29.30139.0"
+          },
+          "runtimes/win-x64/native/d3dcompiler_47.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "10.0.20348.1"
+          },
+          "runtimes/win-x64/native/dxva2.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "10.0.22000.1"
+          },
+          "runtimes/win-x64/native/icudtl.dat": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/libEGL.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "2.1.20140.0"
+          },
+          "runtimes/win-x64/native/libGLESv2.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "2.1.20140.0"
+          },
+          "runtimes/win-x64/native/libcef.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "110.0.31.0"
+          },
+          "runtimes/win-x64/native/locales/af.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/am.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/ar.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/bg.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/bn.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/ca.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/cs.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/da.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/de.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/el.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/en-GB.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/en-US.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/es-419.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/es.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/et.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/fa.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/fi.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/fil.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/fr.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/gu.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/he.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/hi.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/hr.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/hu.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/id.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/it.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/ja.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/kn.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/ko.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/lt.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/lv.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/ml.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/mr.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/ms.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/nb.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/nl.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/pl.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/pt-BR.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/pt-PT.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/ro.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/ru.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/sk.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/sl.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/sr.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/sv.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/sw.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/ta.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/te.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/th.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/tr.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/uk.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/ur.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/vi.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/zh-CN.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/locales/zh-TW.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/msvcp140.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "14.32.31326.0"
+          },
+          "runtimes/win-x64/native/msvcp140_1.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "14.29.30139.0"
+          },
+          "runtimes/win-x64/native/msvcp140_2.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "14.29.30139.0"
+          },
+          "runtimes/win-x64/native/msvcp140_atomic_wait.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "14.29.30139.0"
+          },
+          "runtimes/win-x64/native/msvcp140_codecvt_ids.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "14.29.30139.0"
+          },
+          "runtimes/win-x64/native/resources.pak": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/snapshot_blob.bin": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/ucrtbase.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "10.0.22000.1"
+          },
+          "runtimes/win-x64/native/v8_context_snapshot.bin": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/vcruntime140.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "14.32.31326.0"
+          },
+          "runtimes/win-x64/native/vcruntime140_1.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "14.32.31326.0"
+          },
+          "runtimes/win-x64/native/vk_swiftshader.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "5.0.0.1"
+          },
+          "runtimes/win-x64/native/vulkan-1.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "1.0.1111.2222"
+          },
+          "runtimes/win-x86/native/IronCefSubprocess.exe": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/IronInterop.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "2023.6.0.14948"
+          },
+          "runtimes/win-x86/native/IronPdf.Native.Chrome.deployment.json": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/chrome_100_percent.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/chrome_200_percent.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/chrome_elf.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "110.0.5481.179"
+          },
+          "runtimes/win-x86/native/concrt140.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "14.29.30139.0"
+          },
+          "runtimes/win-x86/native/d3dcompiler_47.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "10.0.20348.1"
+          },
+          "runtimes/win-x86/native/dxva2.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "10.0.22000.1"
+          },
+          "runtimes/win-x86/native/icudtl.dat": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/libEGL.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "2.1.20140.0"
+          },
+          "runtimes/win-x86/native/libGLESv2.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "2.1.20140.0"
+          },
+          "runtimes/win-x86/native/libcef.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "110.0.31.0"
+          },
+          "runtimes/win-x86/native/locales/af.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/am.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/ar.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/bg.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/bn.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/ca.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/cs.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/da.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/de.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/el.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/en-GB.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/en-US.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/es-419.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/es.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/et.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/fa.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/fi.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/fil.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/fr.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/gu.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/he.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/hi.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/hr.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/hu.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/id.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/it.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/ja.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/kn.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/ko.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/lt.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/lv.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/ml.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/mr.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/ms.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/nb.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/nl.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/pl.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/pt-BR.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/pt-PT.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/ro.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/ru.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/sk.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/sl.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/sr.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/sv.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/sw.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/ta.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/te.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/th.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/tr.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/uk.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/ur.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/vi.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/zh-CN.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/locales/zh-TW.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/msvcp140.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "14.32.31326.0"
+          },
+          "runtimes/win-x86/native/msvcp140_1.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "14.29.30139.0"
+          },
+          "runtimes/win-x86/native/msvcp140_2.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "14.29.30139.0"
+          },
+          "runtimes/win-x86/native/msvcp140_atomic_wait.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "14.29.30139.0"
+          },
+          "runtimes/win-x86/native/msvcp140_codecvt_ids.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "14.29.30139.0"
+          },
+          "runtimes/win-x86/native/resources.pak": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/snapshot_blob.bin": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/ucrtbase.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "10.0.22000.1"
+          },
+          "runtimes/win-x86/native/v8_context_snapshot.bin": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/vcruntime140.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "14.32.31326.0"
+          },
+          "runtimes/win-x86/native/vk_swiftshader.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "5.0.0.1"
+          },
+          "runtimes/win-x86/native/vulkan-1.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "1.0.1111.2222"
+          }
+        }
+      },
+      "IronPdf.Slim/2023.6.10": {
+        "dependencies": {
+          "Google.Protobuf": "3.22.3",
+          "Grpc": "2.46.6",
+          "IronSoftware.System.Drawing": "2023.3.3",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "System.Configuration.ConfigurationManager": "6.0.0",
+          "System.Drawing.Common": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/IronPdf.dll": {
+            "assemblyVersion": "2023.6.0.10",
+            "fileVersion": "2023.6.0.10"
+          }
+        }
+      },
+      "IronSoftware.System.Drawing/2023.3.3": {
+        "dependencies": {
+          "BitMiracle.LibTiff.NET": "2.4.649",
+          "SixLabors.ImageSharp": "2.1.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/IronSoftware.Drawing.Common.dll": {
+            "assemblyVersion": "2023.3.3.0",
+            "fileVersion": "2023.3.3.0"
           }
         }
       },
@@ -1559,6 +2474,18 @@
       "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
+      "SixLabors.ImageSharp/2.1.3": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
+          "System.Text.Encoding.CodePages": "6.0.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/SixLabors.ImageSharp.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.1.3.0"
+          }
+        }
+      },
       "System.AppContext/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
@@ -2359,12 +3286,75 @@
       "path": "azure.identity/1.6.0",
       "hashPath": "azure.identity.1.6.0.nupkg.sha512"
     },
+    "BitMiracle.LibTiff.NET/2.4.649": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XCEdfCphKo0UAvSg1h/OzOFWtjkIGnPMAziYkNqV7NVrqb/tZJTBxJhxIEX7gpvQwg8GIRYt133SUncfkKfjLA==",
+      "path": "bitmiracle.libtiff.net/2.4.649",
+      "hashPath": "bitmiracle.libtiff.net.2.4.649.nupkg.sha512"
+    },
+    "Google.Protobuf/3.22.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uyWJZTS0N3gw35jtm/++1jAJNPkFP92QYdxgiC0yv8vQaOi8gaJZ8PhCnjmN6JbobJcCFPBd0cGkmCh6QYOt6Q==",
+      "path": "google.protobuf/3.22.3",
+      "hashPath": "google.protobuf.3.22.3.nupkg.sha512"
+    },
+    "Grpc/2.46.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vpC39vgCxbVBnsn8boeQv2aGIdEFqQMnjsoDvyYfr6tC93Fe9KqNG1mAiF6KLzJTwk6aiWHGNYE2EqmDUzk5ng==",
+      "path": "grpc/2.46.6",
+      "hashPath": "grpc.2.46.6.nupkg.sha512"
+    },
+    "Grpc.Core/2.46.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZoRg3KmOJ2urTF4+u3H0b1Yv10xzz2Y/flFWS2tnRmj8dbKLeiJaSRqu4LOBD3ova90evqLkVZ85kUkC4JT4lw==",
+      "path": "grpc.core/2.46.6",
+      "hashPath": "grpc.core.2.46.6.nupkg.sha512"
+    },
+    "Grpc.Core.Api/2.46.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Z7HJGqJYyKb53qfp1jf0wRDYs3sxOnkAFxXAW6q52LLmX/zxzjtFLI9eaWO5UC0weiWjn4iT1FzR+tj9qYZAMg==",
+      "path": "grpc.core.api/2.46.6",
+      "hashPath": "grpc.core.api.2.46.6.nupkg.sha512"
+    },
     "Humanizer.Core/2.14.1": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "path": "humanizer.core/2.14.1",
       "hashPath": "humanizer.core.2.14.1.nupkg.sha512"
+    },
+    "IronPdf/2023.6.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-o8kEtvp2977ujQ3gP0tVc6zkE8KOeFe5pTJ9fgYgb/f5by/2QsRPKHMtb9naJJkaP0926SeXLPAdiI9U8L3iSw==",
+      "path": "ironpdf/2023.6.10",
+      "hashPath": "ironpdf.2023.6.10.nupkg.sha512"
+    },
+    "IronPdf.Native.Chrome.Windows/2023.6.14948": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hipMLsxa8FZtiCdp/rrCLlPUbVk1DULJe7LvVHYe0SZZR0sYKTt3XAqXKBNjTO2hFyh/nXBpoUU0/TWi+Z+3qA==",
+      "path": "ironpdf.native.chrome.windows/2023.6.14948",
+      "hashPath": "ironpdf.native.chrome.windows.2023.6.14948.nupkg.sha512"
+    },
+    "IronPdf.Slim/2023.6.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tBfxejOygLSQCOVwo0ai+s4qC7bt1uUCsIq/CXO3E+oBA8Z3Hv/Jm4iQ1KzN6zFQkfxJob+Nm1/AMfnbdSAoCQ==",
+      "path": "ironpdf.slim/2023.6.10",
+      "hashPath": "ironpdf.slim.2023.6.10.nupkg.sha512"
+    },
+    "IronSoftware.System.Drawing/2023.3.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GRA/kBUMJErkn7bs7i3y2LZOT3YMAcWFnKZh0Nm+2xvey3jIA0A7q2Ti4RP0AAnZ3eUuhpyRl2bymQgyzc9z2w==",
+      "path": "ironsoftware.system.drawing/2023.3.3",
+      "hashPath": "ironsoftware.system.drawing.2023.3.3.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Cryptography.Internal/7.0.5": {
       "type": "package",
@@ -3044,6 +4034,13 @@
       "sha512": "sha512-VB5cn/7OzUfzdnC8tqAIMQciVLiq2epm2NrAm1E9OjNRyG4lVhfR61SMcLizejzQP8R8Uf/0l5qOIbUEi+RdEg==",
       "path": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "hashPath": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512"
+    },
+    "SixLabors.ImageSharp/2.1.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8yonNRWX3vUE9k29ta0Hbfa0AEc0hbDjSH/nZ3vOTJEXmY6hLnGsjDKoz96Z+AgOsrdkAu6PdL/Ebaf70aitzw==",
+      "path": "sixlabors.imagesharp/2.1.3",
+      "hashPath": "sixlabors.imagesharp.2.1.3.nupkg.sha512"
     },
     "System.AppContext/4.3.0": {
       "type": "package",

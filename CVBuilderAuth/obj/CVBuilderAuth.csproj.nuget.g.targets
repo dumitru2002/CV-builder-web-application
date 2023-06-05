@@ -3,5 +3,6 @@
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)system.text.json\7.0.0\buildTransitive\net6.0\System.Text.Json.targets" Condition="Exists('$(NuGetPackageRoot)system.text.json\7.0.0\buildTransitive\net6.0\System.Text.Json.targets')" />
     <Import Project="$(NuGetPackageRoot)microsoft.extensions.logging.abstractions\7.0.0\buildTransitive\net6.0\Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.logging.abstractions\7.0.0\buildTransitive\net6.0\Microsoft.Extensions.Logging.Abstractions.targets')" />
+    <Import Project="$(NuGetPackageRoot)ironpdf.native.chrome.windows\2023.6.14948\buildTransitive\netstandard2.0\IronPdf.Native.Chrome.Windows.targets" Condition="Exists('$(NuGetPackageRoot)ironpdf.native.chrome.windows\2023.6.14948\buildTransitive\netstandard2.0\IronPdf.Native.Chrome.Windows.targets')" />
   </ImportGroup>
 </Project>
