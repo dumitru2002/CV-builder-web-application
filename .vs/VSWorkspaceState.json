@@ -5,6 +5,6 @@
     "\\CVBuilderAuth\\Controllers",
     "\\CVBuilderAuth\\Models"
   ],
-  "SelectedNode": "\\CVBuilderAuth\\Controllers\\ResumeController.cs",
+  "SelectedNode": "\\CVBuilderAuth\\Controllers\\HomeController.cs",
   "PreviewInSolutionExplorer": false
 }
