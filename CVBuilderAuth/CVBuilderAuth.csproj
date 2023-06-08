@@ -20,7 +20,6 @@
 
   <ItemGroup>
     <Folder Include="Views\Download\" />
-    <Folder Include="Views\Resume\CvTemplate\2\" />
   </ItemGroup>
 
 </Project>

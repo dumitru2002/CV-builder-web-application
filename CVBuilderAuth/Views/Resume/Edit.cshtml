@@ -35,6 +35,11 @@
             <br />
             @Html.EditorFor(m => m.Phone)
         </p>
+        <p>
+            @Html.LabelFor(m => m.About, "About")
+            <br />
+            @Html.EditorFor(m => m.About)
+        </p>
         <p><input type="submit" value="Save" /></p>
     </fieldset>
 }

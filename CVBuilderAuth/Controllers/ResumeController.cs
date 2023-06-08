@@ -109,7 +109,7 @@ namespace CVBuilderAuth.Controllers
             viewModel.CvSkillsData = db.CvSkills.Where(s => s.UserId == userId).ToList();
             viewModel.CvEducationData = db.CvEducations.Where(s => s.UserId == userId).ToList();
 
-            return View(viewModel );
+            return View("~/Views/Resume/CvTemplate/2/2.cshtml", viewModel );
         }
 
         public IActionResult CV()
