@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Edit Language Info";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model CVBuilderAuth.Models.CvLanguageSkill
+<h2>Edit Experience Info  </h2>
+@using (Html.BeginForm("EditLanguage", "Resume", FormMethod.Post))
+{
+    <fieldset>
+        @Html.HiddenFor(m => m.Id)
+        <p>
+            @Html.LabelFor(m => m.Language, "Language")
+            <br />
+            @Html.EditorFor(m => m.Language)
+        </p>
+        <p>
+            @Html.LabelFor(m => m.Proficiency, "Proficiency")
+            <br />
+            @Html.EditorFor(m => m.Proficiency)
+
+        </p>
+       
+       
+        <p><input type="submit" value="Save" /></p>
+    </fieldset>
+}
