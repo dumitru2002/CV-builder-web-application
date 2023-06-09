@@ -9,11 +9,11 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CVBuilderAuth
 build_property.RootNamespace = CVBuilderAuth
-build_property.ProjectDir = C:\Users\dumit\Source\Repos\dumitru2002\CV-builder-web-application\CVBuilderAuth\
+build_property.ProjectDir = C:\Users\dumit\source\repos\dumitru2002\CV-builder-web-application\CVBuilderAuth\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\dumit\Source\Repos\dumitru2002\CV-builder-web-application\CVBuilderAuth
+build_property.MSBuildProjectDirectory = C:\Users\dumit\source\repos\dumitru2002\CV-builder-web-application\CVBuilderAuth
 build_property._RazorSourceGeneratorDebug = 
 
 [C:/Users/dumit/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Admin/AddUser.cshtml]
@@ -74,6 +74,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/dumit/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Resume/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdW1lXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dumit/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Resume/EditExperience.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdW1lXEVkaXRFeHBlcmllbmNlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/dumit/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Resume/Show.cshtml]

@@ -109,7 +109,7 @@ namespace CVBuilderAuth.Controllers
             viewModel.CvSkillsData = db.CvSkills.Where(s => s.UserId == userId).ToList();
             viewModel.CvEducationData = db.CvEducations.Where(s => s.UserId == userId).ToList();
 
-            return View("~/Views/Resume/CvTemplate/2/2.cshtml", viewModel );
+            return View(viewModel );
         }
 
         public IActionResult CV()
@@ -133,6 +133,78 @@ namespace CVBuilderAuth.Controllers
             db.Entry(userCvInfo).State = EntityState.Modified;
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             userCvInfo.UserId = userId;
+            db.SaveChanges();
+            return RedirectToAction("Show");
+        }
+
+        [HttpGet]
+        public ActionResult EditExperience()
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            CvExperience cvExperience = db.CvExperiences.FirstOrDefault(u => u.UserId == userId);
+            return View(cvExperience);
+        }
+
+        [HttpPost]
+        public ActionResult EditExperience(CvExperience cvExperience)
+        {
+            db.Entry(cvExperience).State = EntityState.Modified;
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            cvExperience.UserId = userId;
+            db.SaveChanges();
+            return RedirectToAction("Show");
+        }
+
+        [HttpGet]
+        public ActionResult EditLanguage()
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            CvLanguageSkill cvLanguageSkill = db.CvLanguageSkills.FirstOrDefault(u => u.UserId == userId);
+            return View(cvLanguageSkill);
+        }
+
+        [HttpPost]
+        public ActionResult EditLanguage(CvLanguageSkill cvLanguageSkill)
+        {
+            db.Entry(cvLanguageSkill).State = EntityState.Modified;
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            cvLanguageSkill.UserId = userId;
+            db.SaveChanges();
+            return RedirectToAction("Show");
+        }
+
+        [HttpGet]
+        public ActionResult EditEducation()
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            CvEducation cvEducation = db.CvEducations.FirstOrDefault(u => u.UserId == userId);
+            return View(cvEducation);
+        }
+
+        [HttpPost]
+        public ActionResult EditEducation(CvEducation cvEducation)
+        {
+            db.Entry(cvEducation).State = EntityState.Modified;
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            cvEducation.UserId = userId;
+            db.SaveChanges();
+            return RedirectToAction("Show");
+        }
+
+        [HttpGet]
+        public ActionResult EditSKill()
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            CvSkill cvSkill = db.CvSkills.FirstOrDefault(u => u.UserId == userId);
+            return View(cvSkill);
+        }
+
+        [HttpPost]
+        public ActionResult EditSkill(CvSkill cvSkill)
+        {
+            db.Entry(cvSkill).State = EntityState.Modified;
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            cvSkill.UserId = userId;
             db.SaveChanges();
             return RedirectToAction("Show");
         }
