@@ -1,68 +1,56 @@
-﻿@model CombinedViewModel
+﻿
+@model CombinedViewModel
 
-@if (Model.UserCvInfoData.Any() && Model.CvExperienceData.Any() && Model.CvLanguageSkillData.Any() && Model.CvSkillsData.Any())
-{
-    <table>
-        <tr>
-            <th>User CV Info</th>
-        </tr>
-        <tr>
-            <td>@Model.UserCvInfoData.FirstOrDefault()?.FirstName</td>
-            <td>@Model.UserCvInfoData.FirstOrDefault()?.LastName</td>
-            <td>@Model.UserCvInfoData.FirstOrDefault()?.BirthDate</td>
-            <td>@Model.UserCvInfoData.FirstOrDefault()?.Email</td>
-            <td>@Model.UserCvInfoData.FirstOrDefault()?.Phone</td>
-            <td>@Model.UserCvInfoData.FirstOrDefault()?.About</td>
-        </tr>
-           <a href="/Resume/Edit"><button type="button" >Change User Info</button> </a>
-    </table>
-
-    <table>
-        <tr>
-            <th>CV Experience</th>
-        </tr>
-        <tr>
-            <td>@Model.CvExperienceData.FirstOrDefault()?.Position</td>
-            <td>@Model.CvExperienceData.FirstOrDefault()?.Description</td>
-            <td>@Model.CvExperienceData.FirstOrDefault()?.StartDate</td>
-            <td>@Model.CvExperienceData.FirstOrDefault()?.EndDate</td>
-
-        </tr>
-    </table>
-
-    <table>
-        <tr>
-            <th>CV Language Skill</th>
-        </tr>
-        <tr>
-            <td>@Model.CvLanguageSkillData.FirstOrDefault()?.Language</td>
-            <td>@Model.CvLanguageSkillData.FirstOrDefault()?.Proficiency</td>
-
-        </tr>
-    </table>
-
-    <table>
-        <tr>
-            <th>CV Skills</th>
-        </tr>
-        <tr>
-            <td>@Model.CvSkillsData.FirstOrDefault()?.Name</td>
-            <td>@Model.CvSkillsData.FirstOrDefault()?.Level</td>
-
-        </tr>
-    </table>
-
-    <table>
-        <tr>
-            <th>CV Education</th>
-        </tr>
-        <tr>
-            <td>@Model.CvEducationData.FirstOrDefault()?.Name</td>
-            <td>@Model.CvEducationData.FirstOrDefault()?.Type</td>
-
-        </tr>
-    </table>
-
-    
+@{
+    ViewBag.Title = "CV Builder";
 }
 
+<h2>Basic Info</h2>
+
+    <p><strong>First Name:</strong> @Model.UserCvInfoData.FirstOrDefault()?.FirstName.</p>
+    <p><strong>Last Name:</strong> @Model.UserCvInfoData.FirstOrDefault()?.LastName</p>
+    <p><strong>Birth Date:</strong> @Model.UserCvInfoData.FirstOrDefault()?.BirthDate</p>
+    <p><strong>Email:</strong> @Model.UserCvInfoData.FirstOrDefault()?.Email</p>
+    <p><strong>Phone:</strong> @Model.UserCvInfoData.FirstOrDefault()?.Phone</p>
+    <p><strong>About:</strong> @Model.UserCvInfoData.FirstOrDefault()?.About</p>
+
+<button onclick="location.href='@Url.Action("Edit")'">Edit</button>
+<hr/>
+
+<h2>Language Skills</h2>
+
+<p><strong>Language:</strong> @Model.CvLanguageSkillData.FirstOrDefault()?.Language</p>
+<p><strong>Proficiency:</strong> @Model.CvLanguageSkillData.FirstOrDefault()?.Proficiency</p>
+        
+
+<button onclick="location.href='@Url.Action("EditLanguage")'">Edit</button>
+<hr />
+
+<h2>Education</h2>
+
+<p><strong>Name:</strong> @Model.CvEducationData.FirstOrDefault()?.Name</p>
+<p><strong>Type:</strong> @Model.CvEducationData.FirstOrDefault()?.Type</p>
+       
+
+<button onclick="location.href='@Url.Action("EditEducation")'">Edit</button>
+<hr />
+
+<h2>Experience</h2>
+
+<p><strong>Position:</strong> @Model.CvExperienceData.FirstOrDefault()?.Position</p>
+<p><strong>Description:</strong> @Model.CvExperienceData.FirstOrDefault()?.Description</p>
+<p><strong>Start Date:</strong> @Model.CvExperienceData.FirstOrDefault()?.StartDate</p>
+<p><strong>End Date:</strong> @Model.CvExperienceData.FirstOrDefault()?.EndDate</p>
+      
+
+<button onclick="location.href='@Url.Action("EditExperience")'">Edit</button>
+<hr />
+
+<h2>Skills</h2>
+
+<p><strong>Name:</strong> @Model.CvSkillsData.FirstOrDefault()?.Name</p>
+<p><strong>Level:</strong> @Model.CvSkillsData.FirstOrDefault()?.Level</p>
+       
+
+<button onclick="location.href='@Url.Action("EditSkill")'">Edit</button>
+<hr />
