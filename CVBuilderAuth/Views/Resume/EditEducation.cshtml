@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Edit Education Info";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model CVBuilderAuth.Models.CvEducation
+<h2>Edit Education Info  </h2>
+@using (Html.BeginForm("EditEducation", "Resume", FormMethod.Post))
+{
+    <fieldset>
+        @Html.HiddenFor(m => m.Id)
+        <p>
+            @Html.LabelFor(m => m.Name, "Name")
+            <br />
+            @Html.EditorFor(m => m.Name)
+        </p>
+        <p>
+            @Html.LabelFor(m => m.Type, "Type")
+            <br />
+            @Html.EditorFor(m => m.Type)
+
+        </p>
+       
+       
+        <p><input type="submit" value="Save" /></p>
+    </fieldset>
+}
