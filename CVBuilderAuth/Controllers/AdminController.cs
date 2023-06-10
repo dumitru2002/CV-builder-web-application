@@ -1,11 +1,14 @@
-﻿using CVBuilderAuth.Models.DTO;
+﻿using CVBuilderAuth.Models.Domain;
+using CVBuilderAuth.Models.DTO;
+using CVBuilderAuth.Models;
 using CVBuilderAuth.Repositories.Abstract;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CVBuilderAuth.Controllers
 {
-    [Authorize(Roles ="admin")]
+    [Authorize(Roles = "admin")]
     public class AdminController : Controller
     {
         public IActionResult Display()
@@ -13,10 +16,26 @@ namespace CVBuilderAuth.Controllers
             return View();
         }
 
+
+
+
+
+
+
+
+        private readonly UserManager<ApplicationUser> userManager;
         private readonly IUserAuthenticationService _service;
-        public AdminController(IUserAuthenticationService service)
+        public AdminController(IUserAuthenticationService service, UserManager<ApplicationUser> userManager)
         {
             this._service = service;
+            this.userManager = userManager;
+        }
+
+        [HttpGet]
+        public IActionResult ListUsers()
+        {
+            var users = userManager.Users;
+            return View(users);
         }
 
         public IActionResult AddUser()
@@ -32,6 +51,14 @@ namespace CVBuilderAuth.Controllers
             var result = await _service.RegistrationAsync(model);
             TempData["msg"] = result.Message;
             return RedirectToAction(nameof(Display));
+        }
+
+        private DatabaseContext db = new DatabaseContext(); 
+
+        public ActionResult ShowUser()
+        {
+            var users = db.Users.ToList();
+            return View(users);
         }
     }
 }

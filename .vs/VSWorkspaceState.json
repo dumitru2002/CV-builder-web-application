@@ -1,10 +1,6 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\CVBuilderAuth",
-    "\\CVBuilderAuth\\Views",
-    "\\CVBuilderAuth\\Views\\Resume"
+    ""
   ],
-  "SelectedNode": "\\CVBuilderAuth\\Views\\Resume\\Show.cshtml",
   "PreviewInSolutionExplorer": false
 }

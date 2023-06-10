@@ -11966,19 +11966,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ThinkPad\\.nuget\\packages\\": {}
+    "C:\\Users\\dumit\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ThinkPad\\Source\\Repos\\dumitru2002\\CV-builder-web-application\\CVBuilderAuth\\CVBuilderAuth.csproj",
+      "projectUniqueName": "C:\\Users\\dumit\\Source\\Repos\\dumitru2002\\CV-builder-web-application\\CVBuilderAuth\\CVBuilderAuth.csproj",
       "projectName": "CVBuilderAuth",
-      "projectPath": "C:\\Users\\ThinkPad\\Source\\Repos\\dumitru2002\\CV-builder-web-application\\CVBuilderAuth\\CVBuilderAuth.csproj",
-      "packagesPath": "C:\\Users\\ThinkPad\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ThinkPad\\Source\\Repos\\dumitru2002\\CV-builder-web-application\\CVBuilderAuth\\obj\\",
+      "projectPath": "C:\\Users\\dumit\\Source\\Repos\\dumitru2002\\CV-builder-web-application\\CVBuilderAuth\\CVBuilderAuth.csproj",
+      "packagesPath": "C:\\Users\\dumit\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dumit\\Source\\Repos\\dumitru2002\\CV-builder-web-application\\CVBuilderAuth\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ThinkPad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dumit\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11986,7 +11986,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -12051,7 +12050,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
