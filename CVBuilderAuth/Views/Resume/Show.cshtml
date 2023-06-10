@@ -4,7 +4,7 @@
 @{
     ViewBag.Title = "CV Builder";
 }
-
+<div class="card-body">
 <h2>Basic Info</h2>
 
     <p><strong>First Name:</strong> @Model.UserCvInfoData.FirstOrDefault()?.FirstName.</p>
@@ -14,8 +14,9 @@
     <p><strong>Phone:</strong> @Model.UserCvInfoData.FirstOrDefault()?.Phone</p>
     <p><strong>About:</strong> @Model.UserCvInfoData.FirstOrDefault()?.About</p>
 
-<button onclick="location.href='@Url.Action("Edit")'">Edit</button>
-<hr/>
+<button class="btn btn-primary" onclick="location.href='@Url.Action("Edit")'">Edit</button>
+</div>
+<hr/> 
 
 <h2>Language Skills</h2>
 
@@ -23,7 +24,7 @@
 <p><strong>Proficiency:</strong> @Model.CvLanguageSkillData.FirstOrDefault()?.Proficiency</p>
         
 
-<button onclick="location.href='@Url.Action("EditLanguage")'">Edit</button>
+<button class="btn btn-primary" onclick="location.href='@Url.Action("EditLanguage")'">Edit</button>
 <hr />
 
 <h2>Education</h2>
@@ -32,7 +33,7 @@
 <p><strong>Type:</strong> @Model.CvEducationData.FirstOrDefault()?.Type</p>
        
 
-<button onclick="location.href='@Url.Action("EditEducation")'">Edit</button>
+<button class="btn btn-primary" onclick="location.href='@Url.Action("EditEducation")'">Edit</button>
 <hr />
 
 <h2>Experience</h2>
@@ -43,7 +44,7 @@
 <p><strong>End Date:</strong> @Model.CvExperienceData.FirstOrDefault()?.EndDate</p>
       
 
-<button onclick="location.href='@Url.Action("EditExperience")'">Edit</button>
+<button class="btn btn-primary" onclick="location.href='@Url.Action("EditExperience")'">Edit</button>
 <hr />
 
 <h2>Skills</h2>
@@ -52,5 +53,5 @@
 <p><strong>Level:</strong> @Model.CvSkillsData.FirstOrDefault()?.Level</p>
        
 
-<button onclick="location.href='@Url.Action("EditSkill")'">Edit</button>
+<button class="btn btn-primary" onclick="location.href='@Url.Action("EditSkill")'">Edit</button>
 <hr />

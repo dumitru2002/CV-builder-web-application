@@ -29,11 +29,11 @@
 
                 @if (User.Identity.IsAuthenticated)
                 {
-                    <li><a href="/UserAuthentication/Logout">Logout</a></li>
+                    <li><a class="btn btn-danger" href="/UserAuthentication/Logout">Logout</a></li>
                 }
                 else
                 {
-                    <li><a href="/UserAuthentication/Login">Login</a></li>
+                    <li><a class="btn btn-primary" href="/UserAuthentication/Login">Login</a></li>
                 }
 
                 
