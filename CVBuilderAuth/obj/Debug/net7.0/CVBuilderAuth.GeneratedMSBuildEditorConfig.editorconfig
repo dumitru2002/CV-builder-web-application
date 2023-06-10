@@ -9,121 +9,125 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CVBuilderAuth
 build_property.RootNamespace = CVBuilderAuth
-build_property.ProjectDir = C:\Users\dumit\Source\Repos\dumitru2002\CV-builder-web-application\CVBuilderAuth\
+build_property.ProjectDir = C:\Users\ThinkPad\Source\Repos\dumitru2002\CV-builder-web-application\CVBuilderAuth\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\dumit\Source\Repos\dumitru2002\CV-builder-web-application\CVBuilderAuth
+build_property.MSBuildProjectDirectory = C:\Users\ThinkPad\Source\Repos\dumitru2002\CV-builder-web-application\CVBuilderAuth
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/dumit/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Admin/AddUser.cshtml]
+[C:/Users/ThinkPad/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Admin/AddUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkVXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dumit/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Admin/Display.cshtml]
+[C:/Users/ThinkPad/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Admin/Display.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGlzcGxheS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dumit/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Dashboard/Display.cshtml]
+[C:/Users/ThinkPad/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Dashboard/Display.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXERpc3BsYXkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dumit/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Home/About.cshtml]
+[C:/Users/ThinkPad/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dumit/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Home/Index.cshtml]
+[C:/Users/ThinkPad/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dumit/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Home/Privacy.cshtml]
+[C:/Users/ThinkPad/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dumit/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Resume/Create.cshtml]
+[C:/Users/ThinkPad/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Resume/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdW1lXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dumit/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Resume/CreateEducation.cshtml]
+[C:/Users/ThinkPad/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Resume/CreateEducation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdW1lXENyZWF0ZUVkdWNhdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dumit/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Resume/CreateExperience.cshtml]
+[C:/Users/ThinkPad/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Resume/CreateExperience.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdW1lXENyZWF0ZUV4cGVyaWVuY2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dumit/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Resume/CreateLanguage.cshtml]
+[C:/Users/ThinkPad/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Resume/CreateLanguage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdW1lXENyZWF0ZUxhbmd1YWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dumit/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Resume/CreateSkill.cshtml]
+[C:/Users/ThinkPad/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Resume/CreateSkill.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdW1lXENyZWF0ZVNraWxsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dumit/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Resume/CV.cshtml]
+[C:/Users/ThinkPad/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Resume/CV.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdW1lXENWLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dumit/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Resume/CvTemplate/1/1.cshtml]
+[C:/Users/ThinkPad/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Resume/CvTemplate/1/1.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdW1lXEN2VGVtcGxhdGVcMVwxLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dumit/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Resume/CvTemplate/2/2.cshtml]
+[C:/Users/ThinkPad/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Resume/CvTemplate/1/ExampleCv1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdW1lXEN2VGVtcGxhdGVcMVxFeGFtcGxlQ3YxLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ThinkPad/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Resume/CvTemplate/2/2.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdW1lXEN2VGVtcGxhdGVcMlwyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dumit/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Resume/Edit.cshtml]
+[C:/Users/ThinkPad/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Resume/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdW1lXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dumit/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Resume/EditEducation.cshtml]
+[C:/Users/ThinkPad/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Resume/EditEducation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdW1lXEVkaXRFZHVjYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dumit/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Resume/EditExperience.cshtml]
+[C:/Users/ThinkPad/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Resume/EditExperience.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdW1lXEVkaXRFeHBlcmllbmNlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dumit/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Resume/EditLanguage.cshtml]
+[C:/Users/ThinkPad/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Resume/EditLanguage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdW1lXEVkaXRMYW5ndWFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dumit/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Resume/EditSkill.cshtml]
+[C:/Users/ThinkPad/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Resume/EditSkill.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdW1lXEVkaXRTa2lsbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dumit/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Resume/Show.cshtml]
+[C:/Users/ThinkPad/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Resume/Show.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdW1lXFNob3cuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dumit/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Shared/Error.cshtml]
+[C:/Users/ThinkPad/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dumit/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Shared/_ShowPdf.cshtml]
+[C:/Users/ThinkPad/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Shared/_ShowPdf.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TaG93UGRmLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dumit/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/ThinkPad/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dumit/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/UserAuthentication/Login.cshtml]
+[C:/Users/ThinkPad/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/UserAuthentication/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckF1dGhlbnRpY2F0aW9uXExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dumit/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/UserAuthentication/Registration.cshtml]
+[C:/Users/ThinkPad/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/UserAuthentication/Registration.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckF1dGhlbnRpY2F0aW9uXFJlZ2lzdHJhdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dumit/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/_ViewImports.cshtml]
+[C:/Users/ThinkPad/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dumit/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/_ViewStart.cshtml]
+[C:/Users/ThinkPad/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dumit/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Shared/_Layout.cshtml]
+[C:/Users/ThinkPad/Source/Repos/dumitru2002/CV-builder-web-application/CVBuilderAuth/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ld331kzuog
