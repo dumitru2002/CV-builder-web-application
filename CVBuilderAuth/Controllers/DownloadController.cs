@@ -19,7 +19,7 @@ namespace CVBuilderAuth.Controllers
             db = context;
             _userManager = userManager;
         }
-        public IActionResult PdfShow()
+        public IActionResult PdfShow(UseTemplate useTemplate)
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
@@ -29,6 +29,8 @@ namespace CVBuilderAuth.Controllers
             model.CvLanguageSkillData = db.CvLanguageSkills.Where(l => l.UserId == userId).ToList();
             model.CvSkillsData = db.CvSkills.Where(s => s.UserId == userId).ToList();
             model.CvEducationData = db.CvEducations.Where(s => s.UserId == userId).ToList();
+
+            ViewBag.TemplateId = db.UseTemplates.FirstOrDefault(u => u.UserId == userId)?.Template;
 
             var html = this.RenderViewAsync("_ShowPdf", model);
             var ironPdfRender = new IronPdf.ChromePdfRenderer();

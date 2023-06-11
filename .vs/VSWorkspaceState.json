@@ -1,6 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\CVBuilderAuth",
+    "\\CVBuilderAuth\\Views",
+    "\\CVBuilderAuth\\Views\\Resume",
+    "\\CVBuilderAuth\\Views\\Resume\\CvTemplate",
+    "\\CVBuilderAuth\\Views\\Resume\\CvTemplate\\1"
   ],
+  "SelectedNode": "\\CVBuilderAuth\\Views\\Resume\\CvTemplate\\1\\ExampleCv1.cshtml",
   "PreviewInSolutionExplorer": false
 }

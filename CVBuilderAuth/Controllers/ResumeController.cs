@@ -209,6 +209,37 @@ namespace CVBuilderAuth.Controllers
             return RedirectToAction("Show");
         }
 
+        public IActionResult SelectTemplate()
+        {
+
+
+            return View();
+        }
+
+
+        public ActionResult EditTemplate(int template)
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            UseTemplate useTemplate = db.UseTemplates.FirstOrDefault(u => u.UserId == userId);
+
+            if(useTemplate == null)
+            {
+                var newTemplate = new UseTemplate
+                {
+                    UserId = userId,
+                    Template = template
+                };
+                db.UseTemplates.Add(newTemplate);
+            }
+            else
+            {
+                useTemplate.Template = template;
+            }
+            db.SaveChanges();
+            return RedirectToAction("Display", "Dashboard");
+        }
+
+
 
 
 

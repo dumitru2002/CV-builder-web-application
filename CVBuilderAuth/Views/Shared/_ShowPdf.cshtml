@@ -1,4 +1,9 @@
 ﻿@{
     Layout = null;
 }
-@Html.Partial("~/Views/Resume/CvTemplate/1/1.cshtml")
+@{
+    int templateId = ViewBag.TemplateId; // Retrieve the value from ViewBag
+    string templatePath = $"~/Views/Resume/CvTemplate/{templateId}/{templateId}.cshtml";
+}
+
+@Html.Partial(templatePath)

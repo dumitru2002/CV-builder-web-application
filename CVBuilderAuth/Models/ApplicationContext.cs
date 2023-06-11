@@ -9,6 +9,7 @@ namespace CVBuilderAuth.Models
         public DbSet<CvLanguageSkill> CvLanguageSkills { get; set; }
         public DbSet<CvSkill> CvSkills { get; set; }
         public DbSet<CvEducation> CvEducations { get; set; }
+        public DbSet<UseTemplate> UseTemplates { get; set; }
 
         public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options)
         {

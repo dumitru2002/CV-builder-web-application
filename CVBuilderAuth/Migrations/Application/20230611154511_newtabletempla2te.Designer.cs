@@ -3,6 +3,7 @@ using CVBuilderAuth.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CVBuilderAuth.Migrations.Application
 {
     [DbContext(typeof(ApplicationContext))]
-    partial class ApplicationContextModelSnapshot : ModelSnapshot
+    [Migration("20230611154511_newtabletempla2te")]
+    partial class newtabletempla2te
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -129,7 +132,7 @@ namespace CVBuilderAuth.Migrations.Application
                     b.ToTable("CvSkills");
                 });
 
-            modelBuilder.Entity("CVBuilderAuth.Models.UseTemplate", b =>
+            modelBuilder.Entity("CVBuilderAuth.Models.CvTemplateNr", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -137,7 +140,7 @@ namespace CVBuilderAuth.Migrations.Application
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("Template")
+                    b.Property<int>("TempNr")
                         .HasColumnType("int");
 
                     b.Property<string>("UserId")
@@ -146,7 +149,7 @@ namespace CVBuilderAuth.Migrations.Application
 
                     b.HasKey("Id");
 
-                    b.ToTable("UseTemplates");
+                    b.ToTable("CvTemplateIds");
                 });
 
             modelBuilder.Entity("CVBuilderAuth.Models.UserCvInfo", b =>

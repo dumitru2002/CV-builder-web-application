@@ -1,0 +1,19 @@
+﻿<div >
+    <div >
+        @using (Html.BeginForm("EditTemplate", "Resume", FormMethod.Post))
+        {
+            <input type="hidden" name="template" value="1" />
+            <button type="submit" class="btn btn-primary select-button">Select</button>
+        }
+        @Html.Partial("~/Views/Resume/CvTemplate/1/ExampleCv1.cshtml")
+    </div>
+    <div><span></span></div>
+    <div >
+        @using (Html.BeginForm("EditTemplate", "Resume", FormMethod.Post))
+        {
+            <input type="hidden" name="template" value="2" />
+            <button type="submit" class="btn btn-primary select-button">Select</button>
+        }
+        @Html.Partial("~/Views/Resume/CvTemplate/2/ExampleCv2.cshtml")
+    </div>
+</div>
