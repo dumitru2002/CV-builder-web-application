@@ -3,322 +3,116 @@
     Layout = null;
 }
 <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+   @@import url(//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css);
+@@import url(//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css);
+@@import url(https://fonts.googleapis.com/css?family=Ubuntu);
 
-    html {
-        height: 100%;
-    }
+body {
+				  font-family: "Ubuntu", sans-serif;
+				 
+			}
 
-    body {
-        min-height: 100%;
-        background: #eee;
-        font-family: 'Lato', sans-serif;
-        font-weight: 400;
-        color: #222;
-        font-size: 14px;
-        line-height: 26px;
-        padding-bottom: 50px;
-    }
-
-    .container {
-        max-width: 700px;
-        background: #fff;
-        margin: 0px auto 0px;
-        box-shadow: 1px 1px 2px #DAD7D7;
-        border-radius: 3px;
-        padding: 40px;
-        margin-top: 50px;
-    }
-
-    .header {
-        margin-bottom: 30px;
-        .full-name
-
-    {
-        font-size: 40px;
-        text-transform: uppercase;
-        margin-bottom: 5px;
-    }
-
-    .first-name {
-        font-weight: 700;
-    }
-
-    .last-name {
-        font-weight: 300;
-    }
-
-    .contact-info {
-        margin-bottom: 20px;
-    }
-
-    .email,
-    .phone {
-        color: #999;
-        font-weight: 300;
-    }
-
-    .separator {
-        height: 10px;
-        display: inline-block;
-        border-left: 2px solid #999;
-        margin: 0px 10px;
-    }
-
-    .position {
-        font-weight: bold;
-        display: inline-block;
-        margin-right: 10px;
-        text-decoration: underline;
-    }
-
-    }
-
-
-    .details {
-        line-height: 20px;
-        .section
-
-    {
-        margin-bottom: 40px;
-    }
-
-    .section:last-of-type {
-        margin-bottom: 0px;
-    }
-
-    .section__title {
-        letter-spacing: 2px;
-        color: #54AFE4;
-        font-weight: bold;
-        margin-bottom: 10px;
-        text-transform: uppercase;
-    }
-
-    .section__list-item {
-        margin-bottom: 40px;
-    }
-
-        .section__list-item:last-of-type {
-            margin-bottom: 0;
-        }
-
-    .left,
-    .right {
-        vertical-align: top;
-        display: inline-block;
-    }
-
-    .left {
-        width: 60%;
-    }
-
-    .right {
-        tex-align: right;
-        width: 39%;
-    }
-
-    .name {
-        font-weight: bold;
-    }
-
-    a {
-        text-decoration: none;
-        color: #000;
-        font-style: italic;
-    }
-
-        a:hover {
-            text-decoration: underline;
-            color: #000;
-        }
-
-    .skills {
-    }
-
-    .skills__item {
-        margin-bottom: 10px;
-    }
-
-        .skills__item .right {
-            input
-
-    {
-        display: none;
-    }
-
-    label {
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        background: #C3DEF3;
-        border-radius: 20px;
-        margin-right: 3px;
-    }
-
-    input:checked + label {
-        background: #79A9CE;
-    }
-
-    }
-    }
+article {
+  margin-bottom: 30px;
+}
+			.img-responsive {
+				  width: 150px;
+				  height: 150px;
+			}
+			figcaption {
+				  margin-top: 20px;
+			}
+			
+			figcaption > h3 {
+				  font-weight: bolder;
+				  font-size: xx-large;
+			}
+			dt, dd {
+				  margin-bottom: 5px;
+			}
 </style>
 
-
-<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
-
+<head>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+</head>
 <div class="container">
-    <div class="header">
-        <div class="full-name">
-            <span class="first-name">@Model.UserCvInfoData.FirstOrDefault()?.FirstName</span>
-            <span class="last-name">@Model.UserCvInfoData.FirstOrDefault()?.LastName</span>
-        </div>
-        <div class="contact-info">
-            <span class="email">Email: </span>
-            <span class="email-val">@Model.UserCvInfoData.FirstOrDefault()?.Email</span>
-            <span class="separator"></span>
-            <span class="phone">Phone: </span>
-            <span class="phone-val">@Model.UserCvInfoData.FirstOrDefault()?.Phone</span>
-        </div>
-
-        <div class="about">
-            <span class="position">Front-End Developer </span>
-            <span class="desc">
-                @Model.UserCvInfoData.FirstOrDefault()?.About
-            </span>
+    <div class="row">
+        <div class="col-lg-offset-2 col-lg-8">
+            <section class="panel panel-default">
+                <div class="panel-body">
+                    <article class="panel-body">
+                        <figure class="text-center">
+                           
+                            <figcaption>
+                                <h3>@Model.UserCvInfoData.FirstOrDefault()?.FirstName @Model.UserCvInfoData.FirstOrDefault()?.LastName</h3>
+                                <br> Tel. @Model.UserCvInfoData.FirstOrDefault()?.Phone E-mail: @Model.UserCvInfoData.FirstOrDefault()?.Email
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <br>
+                    <article>
+                        <h4>
+                            <strong>Personal Details</strong>
+                        </h4>
+                        <hr>
+                        <dl class="dl-horizontal">
+                            <dt>Date of Birth:</dt>
+                            <dd>@Model.UserCvInfoData.FirstOrDefault()?.BirthDate</dd>
+                            
+                            <dt>About:</dt>
+                            <dd>@Model.UserCvInfoData.FirstOrDefault()?.About</dd>
+                        </dl>
+                    </article>
+                    <article>
+                        <h4>
+                            <strong>Edcucation</strong>
+                        </h4>
+                        <hr>
+                        <dl class="dl-horizontal">
+                            <dt>@Model.CvEducationData.FirstOrDefault()?.Type</dt>
+                            <dd>@Model.CvEducationData.FirstOrDefault()?.Name</dd>
+                        </dl>
+                    </article>
+                    <article>
+                        <h4>
+                            <strong>Languages</strong>
+                        </h4>
+                        <hr>
+                        <dl class="dl-horizontal">
+                            <dt>@Model.CvLanguageSkillData.FirstOrDefault()?.Language</dt>
+                            <dd>@Model.CvLanguageSkillData.FirstOrDefault()?.Proficiency</dd>
+                        </dl>
+                    </article>
+                    <article>
+                        <h4>
+                            <strong>Skills</strong>
+                        </h4>
+                        <hr>
+                        <dl class="dl-horizontal">
+                            
+                            <dd>@Model.CvSkillsData.FirstOrDefault()?.Name - @Model.CvSkillsData.FirstOrDefault()?.Level</dd>
+                            
+                        </dl>
+                    </article>
+                    <article>
+                        <h4>
+                            <strong>Work Experiences</strong>
+                        </h4>
+                        <hr>
+                        <dl class="dl-horizontal">
+                            <dt>@Model.CvExperienceData.FirstOrDefault()?.StartDate->@Model.CvExperienceData.FirstOrDefault()?.EndDate</dt>
+                            <dd>@Model.CvExperienceData.FirstOrDefault()?.Position - @Model.CvExperienceData.FirstOrDefault()?.Description</dd>
+                            
+                        </dl>
+                        <hr>
+                    </article>
+                   
+                   
+                </div>
+            </section>
         </div>
     </div>
-    <div class="details">
-        <div class="section">
-            <div class="section__title">Experience</div>
-            <div class="section__list">
-                <div class="section__list-item">
-                    <div class="left">
-                        <div class="name">>@Model.CvExperienceData.FirstOrDefault()?.Position</div>
-                        <div class="addr">>@Model.CvExperienceData.FirstOrDefault()?.Description</div>
-                        <div class="duration">>@Model.CvExperienceData.FirstOrDefault()?.StartDate - >@Model.CvExperienceData.FirstOrDefault()?.EndDate</div>
-                    </div>
-                   @* <div class="right">
-                        <div class="name">Fr developer</div>
-                        <div class="desc">did This and that</div>
-                    </div>*@
-                </div>
-               
-
-            </div>
-        </div>
-        <div class="section">
-            <div class="section__title">Education</div>
-            <div class="section__list">
-                <div class="section__list-item">
-                    <div class="left">
-                        <div class="name">@Model.CvEducationData.FirstOrDefault()?.Name</div>
-                        <div class="addr">@Model.CvEducationData.FirstOrDefault()?.Type</div>
-                        @*<div class="duration">Jan 2011 - Feb 2015</div>*@
-                    </div>
-                    @*<div class="right">
-                        <div class="name">Fr developer</div>
-                        <div class="desc">did This and that</div>
-                    </div>*@
-                </div>
-               @* <div class="section__list-item">
-                    <div class="left">
-                        <div class="name">Akount</div>
-                        <div class="addr">San Monica, CA</div>
-                        <div class="duration">Jan 2011 - Feb 2015</div>
-                    </div>
-                    <div class="right">
-                        <div class="name">Fr developer</div>
-                        <div class="desc">did This and that</div>
-                    </div>
-                </div>*@
-
-            </div>
-
-        </div>
-        @*<div class="section">
-            <div class="section__title">Projects</div>
-            <div class="section__list">
-                <div class="section__list-item">
-                    <div class="name">DSP</div>
-                    <div class="text">I am a front-end developer with more than 3 years of experience writing html, css, and js. I'm motivated, result-focused and seeking a successful team-oriented company with opportunity to grow.</div>
-                </div>
-
-                <div class="section__list-item">
-                    <div class="name">DSP</div>
-                    <div class="text">
-                        I am a front-end developer with more than 3 years of experience writing html, css, and js. I'm motivated, result-focused and seeking a successful team-oriented company with opportunity to grow. <a href="/login">link</a>
-                    </div>
-                </div>
-            </div>
-        </div>*@
-        <div class="section">
-            <div class="section__title">Skills</div>
-            <div class="skills">
-                <div class="skills__item">
-                    <div class="left">
-                        <div class="name">
-                            @Model.CvSkillsData.FirstOrDefault()?.Name - @Model.CvSkillsData.FirstOrDefault()?.Level
-                        </div>
-                    </div>
-                   @* <div class="right">
-                        <input id="ck1" type="checkbox" checked />
-
-                        <label for="ck1"></label>
-                        <input id="ck2" type="checkbox" checked />
-
-                        <label for="ck2"></label>
-                        <input id="ck3" type="checkbox" />
-
-                        <label for="ck3"></label>
-                        <input id="ck4" type="checkbox" />
-                        <label for="ck4"></label>
-                        <input id="ck5" type="checkbox" />
-                        <label for="ck5"></label>
-
-                    </div>*@
-                </div>
-
-            </div>
-            @*<div class="skills__item">
-                <div class="left">
-                    <div class="name">
-                        CSS
-                    </div>
-                </div>
-                <div class="right">
-                    <input id="ck1" type="checkbox" checked />
-
-                    <label for="ck1"></label>
-                    <input id="ck2" type="checkbox" checked />
-
-                    <label for="ck2"></label>
-                    <input id="ck3" type="checkbox" />
-
-                    <label for="ck3"></label>
-                    <input id="ck4" type="checkbox" />
-                    <label for="ck4"></label>
-                    <input id="ck5" type="checkbox" />
-                    <label for="ck5"></label>
-
-                </div>
-            </div>*@
-
-        </div>
-        @*<div class="section">
-            <div class="section__title">
-                Interests
-            </div>
-            <div class="section__list">
-                <div class="section__list-item">
-                    Football, programming.
-                </div>
-            </div>
-        </div>*@
-    </div>
-</div>
 </div>
