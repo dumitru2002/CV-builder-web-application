@@ -19,6 +19,7 @@ namespace CVBuilderAuth.Controllers
             db = context;
             _userManager = userManager;
         }
+        
         public IActionResult PdfShow(UseTemplate useTemplate)
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
