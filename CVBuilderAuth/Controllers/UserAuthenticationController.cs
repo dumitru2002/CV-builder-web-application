@@ -68,7 +68,7 @@ namespace CVBuilderAuth.Controllers
         {
             var model = new RegistrationModel()
             {
-                Username = "admin1",
+                Username = "admin",
                 Name = "Dumitru Cernei",
                 Email = "dumitru2002@yandex.ru",
                 Password = "Admin@12345#"
